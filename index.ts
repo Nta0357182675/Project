@@ -1,4 +1,3 @@
-
 // hiện mật khẩu
 let pass = document.querySelector('form .form_2 i') as HTMLElement
 
@@ -13,6 +12,5 @@ pass.addEventListener('click', function (){
    } else{
     pass.className = "fa-regular fa-eye"
     mk.type = 'password'
-     
    }
 })

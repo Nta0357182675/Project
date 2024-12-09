@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4"
   }
 }
