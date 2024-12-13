@@ -1,0 +1,446 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 5em;
+    height: 250em;
+}
+
+.container {
+    width: 100%;
+    height: 250em;
+    background-color: aqua;
+    display: flex;
+}
+
+.left {
+    height: 250em;
+    width: 25%;
+    background-color: blue;
+
+}
+
+.left .header {
+    width: 25%;
+    height: 5em;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: #D7DDE8;
+    border: none;
+}
+
+.header .feauture {
+    height: 60%;
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .feauture .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 5px;
+    padding: 0.5em;
+    padding-right: 0.5em;
+}
+
+.header .feauture .search input {
+    width: 91%;
+    height: 100%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: #D7DDE8; 
+}
+
+.header .feauture .search i {
+    font-size: 20px;
+    color: grey;
+
+
+}
+
+.header .feauture i {
+    font-size: 30px;
+}
+
+.left .bo {
+    background-color: #D7DDE8;
+    width: 25%;
+    height: 100%;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    border: 1px solid #CBDCEB;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.30);
+
+}
+
+.left .bo .info {
+    width: 100%;
+
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.left .bo .info .avatar {
+    width: 60%;
+    height: 50%;
+    background-color: aqua;
+    border-radius: 50%;
+
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.left .bo .info h2 {
+    font-family: "Dancing Script", serif;
+    font-weight: bolder;
+}
+
+.info .thong_tin {
+    width: 100%;
+    height: 50%;
+    padding: 1em;
+
+}
+
+.info .thong_tin ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.thong_tin ul li {
+    display: flex;
+    gap: 0.5em
+}
+
+.thong_tin ul li.loi p {
+    position: relative;
+    left: 5px;
+}
+
+.sothich {
+    width: 100%;
+    height: 7%;
+
+}
+
+.sothich h3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border: none;
+    gap: 0.5em;
+    border-radius: 10px
+    
+}
+
+.sothich h3 i {
+    font-size: 1.5em;
+}
+
+div.sothich h3:hover i {
+    color: #f5af19;
+}
+
+.out {
+    height: 8%;
+    width: 100%;
+    background-color: #CBDCEB;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    opacity: 0.8;
+
+
+
+}
+
+.out i {
+    font-size: 2em;
+}
+
+.right {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    
+}
+
+
+.right .taskbar {
+    width: 75%;
+    height: 5em;
+    background-color: #D7DDE8;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    
+}
+.right .taskbar h1 {
+    font-family: "Dancing Script", serif;
+    font-weight: 1500;
+    position: relative;
+    left: 2.5em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+
+}
+
+.right .taskbar .task {
+    width: 50%;
+    height: 60%;
+    background-color: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.right .taskbar .task ul {
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.right .taskbar .task ul li {
+    font-size: 30px;
+}
+
+.cen {
+    width: 100%;
+    height: 100%;
+    background-color:gray;
+    display: flex;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.30);
+    
+
+}
+
+.cen .trai {
+    width: 50%;
+    height: 100%;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+
+
+}
+
+.cen .trai ul {
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 180px;
+    padding: 5em;
+    list-style-type: none;
+
+}
+
+.cen .trai ul li {
+    height: 500px;
+    width: 70%;
+    background-color: none;
+    border-radius: 10px;
+}
+
+.cen .trai ul li div {
+    width: 100%;
+    height: 100%;
+    background-color: #f5af19;
+}
+
+.cen .trai ul li div .a {
+    width: 100%;
+    height: 10%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Dancing Script", serif;
+
+}
+
+.cen .trai ul li div .b {
+    width: 100%;
+    height: 80%;
+    background-color: springgreen;
+}
+
+.cen .trai ul li div .b img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cen .trai ul li div .c {
+    width: 100%;
+    height: 10%;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cen .trai ul li div .c button {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #b2fefa, #0ed2f7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    border: none;
+    font-family: "Dancing Script", serif;
+    font-size: 20px;
+    
+}
+
+
+.cen .phai {
+    width: 50%;
+    height: 100%;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+
+
+
+}
+
+.cen .phai ul {
+    width: 100%;
+    height: 90%;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 180px;
+    padding: 5em;
+    list-style-type: none;
+
+}
+
+.cen .phai ul li {
+    height: 500px;
+    width: 70%;
+    background-color: none;
+    border-radius: 10px;
+}
+
+.cen .phai ul li div.ny2 {
+    width: 100%;
+    height: 100%;
+    background-color: #f5af19;
+    border-radius: 10px;
+    
+}
+
+.cen .phai ul li div .a {
+    width: 100%;
+    height: 10%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    font-family: "Dancing Script", serif;
+
+}
+
+.cen .phai ul li div .b {
+    width: 100%;
+    height: 80%;
+    background-color: springgreen;
+}
+
+.cen .phai ul li div .b img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cen .phai ul li div .c {
+    width: 100%;
+    height: 10%;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+
+}
+
+.cen .phai ul li div .c button {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #b2fefa, #0ed2f7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    border: none;
+    font-family: "Dancing Script", serif;
+    font-size: 20px;
+}
+
+
+.back{
+    width: 75%;
+    height: 100%;
+
+    position: fixed;
+    z-index: 1
+}
+.back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.8;
+}

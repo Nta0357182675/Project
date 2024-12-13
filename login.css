@@ -7,6 +7,8 @@
 .container {
     height: 100vh;
     width: 100%;
+    background-color: #D7DDE8;;
+    
 
 }
 
@@ -30,7 +32,6 @@
 }
 
 .header .logo h1 {
-    color: #fc4a1a;
     font-family: "Dancing Script", serif;
     font-weight: 1500;
 
@@ -122,7 +123,7 @@
 
     font-size: 2em;
     font-family: "Dancing Script", serif;
-    color: #fc4a1a;
+    
 }
 
 .sign .sign_1 p {
@@ -133,7 +134,8 @@
 
 .sign .sign_1 p a {
     text-decoration: none;
-    color: #fc4a1a
+    color: #FC354C;
+ 
 }
 
 .sign .sign_1 form {
@@ -178,7 +180,8 @@
 
 .forgot_pass a {
     text-decoration: none;
-    color: #fc4a1a
+    color: #FC354C;
+   
 }
 
 .but {
@@ -191,27 +194,26 @@
     align-items: center;
 }
 
-.but button {
+.but a {
     width: 100%;
     height: 80%;
-    background-color: #fc4a1a;
-    border-radius: 20px;
-    border: none;
+    text-decoration: none;
     font-size: 1em;
 
 }
-.but :hover{
+.but a :hover{
     cursor: pointer;
     background-color: #f7b733;
     color: aliceblue;
 }
 
-.but a {
-    text-decoration: none;
+.but a button{
     width: 100%;
     height: 100%;
     font-family: "Dancing Script", serif;
-    color: whitesmoke;
+    background: linear-gradient(to bottom, #b2fefa, #0ed2f7);
+    border-radius: 20px;
+    border: none;
 }
 
 .logor {
@@ -244,7 +246,7 @@
 }
 
 .logor .plat button {
-    border: 1px solid blueviolet;
+    border: 1px solid  #0ed2f7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,22 +271,5 @@
 
 .logor .plat button.b3 div i {
     font-size: 38px;
-}
-
-.background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    z-index: -1;
-    opacity: 0.9;
-
-}
-.background img{
-    width: 100%;
-    height: 100%;
-
-image-rendering: auto;
-
 }
 
