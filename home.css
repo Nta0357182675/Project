@@ -63,7 +63,7 @@ body {
     font-size: 15px;
     border: none;
     outline: none;
-    background-color: #D7DDE8; 
+    background-color: #D7DDE8;
 }
 
 .header .feauture .search i {
@@ -76,6 +76,11 @@ body {
 .header .feauture i {
     font-size: 30px;
 }
+
+.header .feauture i:hover {
+    color: #0ed2f7;
+}
+
 
 .left .bo {
     background-color: #D7DDE8;
@@ -161,21 +166,20 @@ body {
     border: none;
     gap: 0.5em;
     border-radius: 10px
-    
 }
 
 .sothich h3 i {
     font-size: 1.5em;
 }
 
-div.sothich h3:hover i {
-    color: #f5af19;
+div.sothich h3 i:hover {
+    color: #0ed2f7;
 }
 
 .out {
     height: 8%;
     width: 100%;
-    background-color: #CBDCEB;
+    background-color: #D7DDE8;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
@@ -185,15 +189,19 @@ div.sothich h3:hover i {
 
 }
 
-.out i {
+.out div i {
     font-size: 2em;
+}
+
+.out div i:hover {
+    color: #0ed2f7;
 }
 
 .right {
     width: 75%;
     height: 100%;
     display: flex;
-    
+
 }
 
 
@@ -207,8 +215,9 @@ div.sothich h3:hover i {
     justify-content: center;
     align-items: center;
     z-index: 3;
-    
+
 }
+
 .right .taskbar h1 {
     font-family: "Dancing Script", serif;
     font-weight: 1500;
@@ -242,16 +251,35 @@ div.sothich h3:hover i {
 }
 
 .right .taskbar .task ul li {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right .taskbar .task ul li i {
     font-size: 30px;
+    /* color: #b2fefa ; */
+    /* background: linear-gradient(to bottom, #b2fefa, #0ed2f7); */
+}
+
+.right .taskbar .task ul li.home i {
+    color: #0ed2f7;
+}
+
+.right .taskbar .task ul li i:hover {
+    color: #0ed2f7;
 }
 
 .cen {
     width: 100%;
     height: 100%;
-    background-color:gray;
+    background-color: gray;
     display: flex;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.30);
-    
+
 
 }
 
@@ -286,11 +314,21 @@ div.sothich h3:hover i {
     border-radius: 10px;
 }
 
-.cen .trai ul li div {
+.cen .trai ul li div.ny1 {
     width: 100%;
     height: 100%;
     background-color: #f5af19;
+    
 }
+
+.cen .trai ul li div.cf1 {   /* ----------------------------*/
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    display: none;
+}
+
+
 
 .cen .trai ul li div .a {
     width: 100%;
@@ -322,7 +360,7 @@ div.sothich h3:hover i {
     background-color: wheat;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .cen .trai ul li div .c button {
@@ -337,7 +375,7 @@ div.sothich h3:hover i {
     border: none;
     font-family: "Dancing Script", serif;
     font-size: 20px;
-    
+
 }
 
 
@@ -378,7 +416,7 @@ div.sothich h3:hover i {
     height: 100%;
     background-color: #f5af19;
     border-radius: 10px;
-    
+
 }
 
 .cen .phai ul li div .a {
@@ -430,17 +468,86 @@ div.sothich h3:hover i {
 }
 
 
-.back{
+.back {
     width: 75%;
     height: 100%;
 
     position: fixed;
     z-index: 1
 }
-.back img{
+
+.back img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: 1;
     opacity: 0.8;
+}
+
+.log {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.log .lo {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: gray;
+    z-index: 3;
+    opacity: 0.4;
+}
+
+
+
+.log .lo1 {
+    width: 100%;
+    height: 5em;
+    position: fixed;
+    background-color: gray;
+    z-index: 3;
+    top: 0;
+    opacity: 0.4;
+
+}
+
+.but {
+    width: 26%;
+    height: 40%;
+    background-color: white;
+    padding: 0.5em;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    border-radius: 20px;
+}
+
+.nut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    height: 20%;
+    width: 100%;
+    background-color: none;
+}
+
+.nut button {
+    height: 80%;
+    width: 30%;
+    border-radius: 20px;
+    border: 1px solid #0ed2f7;
+
+}
+
+.nut button.b22 {
+    background: linear-gradient(to bottom, #b2fefa, #0ed2f7);
 }

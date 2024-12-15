@@ -273,3 +273,103 @@
     font-size: 38px;
 }
 
+.gt{
+    height:100vh;
+    width: 100%;
+    background-color: #D7DDE8;;
+    margin-top: 29.5px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+
+}
+.gt .g1{
+height: 40%;
+width: 90%;
+padding: 1em;
+gap: 1em;
+display: flex;
+justify-content: space-evenly;
+}
+
+.gt .g1 .g11{
+    background-color: none;
+    height: 100%;
+    width: 30%;
+    border: 1px solid #0ed2f7;
+    border-radius: 10px;
+    padding: 1em;
+    font-family: "Dancing Script", serif;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+
+}
+.gt .g1 .g11:hover{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 20, 0.80);
+    transform: translateY(-20px); /* Nhấc nhẹ thẻ lên */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.80);
+    transition: box-shadow 1s ease, transform 1s ease; /* Hiệu ứng rất chậm */
+}
+
+.gt .g1 .g11 hr{
+    border: 1px solid #0ed2f7;
+}
+.gt .g2{
+    height: 40%;
+    width: 90%;
+    background-color: none;
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.gt .g2 .g22{
+    height: 90%;
+    width: 20%;
+    padding: 1em;
+    background-color: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1em;
+    font-family: "Dancing Script", serif;
+}
+.gt .g2 .g22 ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.gt .g2 .g22 ul li i{
+    font-size: 25px;
+}
+.gt .g3{
+    height: 15%;
+    width: 90%;
+    font-family: "Dancing Script", serif;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding-left: 3em;
+}
+.gt .g3 .img {
+    width: 40%;
+    height: 60%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.gt .g3 .img div{
+    width: 35%;
+    height: 80%;
+
+    
+}
+.gt .g3 .img div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    
+}
